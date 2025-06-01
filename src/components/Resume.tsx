@@ -34,12 +34,16 @@ const Resume = () => {
             </p>
             
             <Button 
-              size="lg"
-              className="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white px-8 py-4 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
-            >
-              <Download className="mr-2" size={20} />
-              Download Resume (PDF)
-            </Button>
+  size="lg"
+  className="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white px-8 py-4 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
+  asChild
+>
+  <a href="/your-resume-file.pdf" download="Satya_Durga_Resume.pdf">
+    <Download className="mr-2" size={20} />
+    Download Resume (PDF)
+  </a>
+</Button>
+
           </CardContent>
         </Card>
       </div>
